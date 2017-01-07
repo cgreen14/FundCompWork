@@ -1,0 +1,43 @@
+report.txt
+
+User:
+From the user perspective several things are streamlined through the way the
+program is designed.  The user is allowed to alter and play life as they
+desire simply by running the executable: playlife.  However, if they have a
+pre-determined list of places where they would like life to be to create a
+design they can simply playlife filename.txt  the code then will run through the
+positions identified and playlife, assuming that the .txt file ends with a "p",
+which signals the action that should be taken with the life.  In place to keep
+the user on track is a limit on the cells that they can access, keeping them
+within bounds, a file check, to make sure the file that they want to run
+exists in the folder and is not corrupted, and finally, a case check to make
+sure the command that is being run is valid in action.  This is all that is
+needed since we are operating under the assumption that a file run with playlife
+ is in the correct format.
+
+Programer:
+At a programming level commands are read in by cin, or ifs based on the value of
+acgc.  This then allows, if a file is added in the command line of playlife,
+a preset to be accessed.  In addition, since I have designed the board to have
+an extra column on each side - this was to allow a streamlined neighbors count -
+I made sure that life was not able to access these out shells. This was done
+through the for loop that actually creates each new board based on the rules of
+the game.  By adding these extra rows it also made it so that when entering a
+new cell it can be done much more intuitively.  The index begins in the upper
+left with (1,1), and using the inputs of x and y and there ordering the user is
+able to naturally enter a 1 4 and based on the placing of the origin know that
+there life will be created 1 row over and 4 rows down.
+The role that the class played was it made killing and bringing to life cells
+a easy process, as well as it created a board of 0's (" ") in the proper size,
+the check bounds was created outside of class to separate the board of 42 by 42
+and the access to 1-40 x 1-40
+
+Eval:
+The hardest part of the evaluation was not the syntax errors, but rather making
+sure the rules were applied correctly to each life.  This was done by starting
+with a simple 1 by 3 line.  The oscillator that switches from vertical to
+horizontal allowed for a first check.  Then as scenes were added the rules were
+verified on a larger scale to create confidence in the implementation of the
+game of life. The error message to the user will display for each error, not
+1 general error which can cause menus to stack up if for instance c 44 44 was
+entered this issue I was not able to resolve.
