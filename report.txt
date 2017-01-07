@@ -1,0 +1,21 @@
+Lab Report Lab 2
+
+	With regards to the final program, the following is an 
+explination.  From the user perspective you are given the function, and the min and 
+max that result over the range.  I chose 20 + 15sin(x).  I found sin was 
+an interesting function becuase intially there was a negative part of 
+the graph.  This meant that the min did not appear on the graph.  I had 
+to then shift the graph up so that it min would be both numerically and 
+visually relevant.
+	
+	The inner workings of the plot are based around a nested for 
+loop.  The outside for loop cylces through the values, and then creates 
+a value d which is an integer that keeps track of y, or in the user 
+sense, how far the "&" should be printed.  The nested loop then prints 
+in accordance with d, not y.  This is becuase you couldnt have 0.467 of 
+an &, for example, so the value has to be trunkated into an integer.  
+This print action is then coupled with the min and max inside the for 
+loop.  They simply check each value to see if they have a new max or min 
+and if they do replace the old value with the new one.  
+
+	 
