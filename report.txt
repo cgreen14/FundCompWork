@@ -1,0 +1,30 @@
+//report.txt
+// Connor Green
+
+User:
+The user is given the chance to interact with the states data through the
+functions that are given in the menu.  There are parts of the code in place to
+make sure the user can't go out of bounds on this menu. This includes both
+trying to type in a choice, and inputing a number out of bounds.  Once they pass
+the first menu they are prompted along with their desired action.  Users in this
+action are also watched on inputs if a state or value is not found. In these
+cases an error is displayed to correct the course of action.  The overall flow
+of the program for the user will be a insertion of file, selection of function,
+execution, then return to function menu until exit is selected.
+
+Program:
+The class of state is used to ease the implementation of the functions that the
+user calls.  The data of a state can be accessed essentially by name.  This
+makes the code easier to read and work with.  For example to find matches between
+state names we were able to use one logical equal, and the getstateName() of it
+in the case of this function to identify an equality. The first check is on the
+the file.  This is done through a check of ifs open. The checks on the user in
+the first menu are accomplished through a default case and the good method of
+cin. if the numerical input is out of bound the default case send them back
+around to the menu again with an error message.  The check of a alphabetical
+input, if it comes back negative will grab another input after explaining the
+rules violated.
+
+Evaluation:  Evaluation of the functions was done through trying to violate the
+rules needed for proper function.  Using number inputs for states and letter
+inputs into number desired functions.
