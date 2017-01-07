@@ -1,0 +1,44 @@
+report.txt
+Connor Green
+
+User Perspective:
+  From the users perspective the program is supposed to help create an intuitive
+  understanding of how energy and work are related as well as demonstrate rotation
+  animation.  I did this by linking a "flashlight" to a windmill.  The faster
+  the user has the wheels spin they longer the light lines will be. Upon running
+  the executable there are instructions for the user in the upper left hand
+  corner. The user interacts using a, d, or the left and right arrows to change
+  and even reverse the speed all while seeing the "light" produced as a result.
+
+Program Perspective:
+  From a program perspective there are 4 overall steps, clear the board, create
+  the shapes, flush the board, iterate theta(rotation).  The involved step then
+  being how to create all the shapes.  This is done through 3 functions.  The
+  static shapes contains all the shapes that serve as background and don't
+  involve movement.  The rotation is accomplished through creating two
+  perpendicular lines that function to respond the the change in wind.
+
+  The response to user input is done through a case structure.  Once an input
+  from the computer is found, that inputs ascII value is assigned to c, which
+  is then compared against the arrow keys, a and d, as well as q.  q breaks out
+  of the while loop and returns 0.  The others iterate the speed of the windmill
+  up and down.  Within the light effect there is an if statement that takes
+  addresses both a clock wise and counter clockwise rotation of the windmill.
+  This was needed so that light would be created in both directions.
+
+  The angles in the light as well as the rotation of the wheel were all done
+  using geometry, the light being in a static system, where it was used to
+  adjust the length while maintaining the direction.  In the rotation it was
+  used as the driver of the motion.
+
+Evaluation:
+  To assess the program I first started with the static objects and check to
+  make sure that they were displayed correctly.  Then I added each the linear
+  growth of the lights, and added the rotation and the ability to change it into
+  the case structure.  The largest problem that I ran into was making sure that
+  the animation ran smoothly.  I had to use some trial and error to assess the
+  usleep() value that was needed. An added consideration for this was the fact
+  that the user could adjust the speed of rotation.  This meant I had to push
+  the usleep() to function at both high and low speeds. I also had to go back
+  and lower the scaling rate of theta, so there was a more dynamic visual range
+  when changing the speed.
