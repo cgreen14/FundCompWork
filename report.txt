@@ -1,0 +1,9 @@
+Part 3 of the lab is designed to return the area of a trapeziod given the 
+length of the base, top, and hieght of the shape.  From a programmers 
+perspective the varaibles required are all set up as floats as to 
+accomidate for non-integer values.  Then the user is promted for inputs. The 
+computer then checks the values to see if they are negative, since you can't
+have a negative side value.  This would also greatly effect the computation. 
+If the "if" loop sees a negative it returns an error message.  If the values
+pass the loop then it continues with the formula and then displays the value
+calculated to the user.
