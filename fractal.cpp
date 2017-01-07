@@ -1,4 +1,4 @@
-8//Ryan Green, Lab 11, 12/4/16
+8//Connor Green, Lab 11, 12/4/16
 // Used Part of example code provided
 #include <unistd.h>
 #include <cstdlib>
@@ -29,8 +29,10 @@ int main(){
         sierpinski( x1, y1, x2, y2, x3, y3 );
         break;
       case '2':
+        // partner work
         break;
       case '3':
+        // partner work
         break;
       case '4':
         drawCircle(250,250,150);
@@ -45,6 +47,7 @@ int main(){
         drawFern(250,475,300,M_PI/2);
         break;
       case '8':
+        // partner work
         break;
     }
 
