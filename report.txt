@@ -1,0 +1,19 @@
+In the final part of the lab the goal was to use the data about the win 
+loss record of the Notre Dame football team, since 1900, to further our 
+understanding of functions as well as arrays.  From the user perspective 
+they simply follow the command prompts to select how they would like to 
+search through the data.  This includes, win - loss for every year, as 
+well as years with x wins or losses, and a list of the best years or 
+worst years that we have had as a program. 
+
+Interally, it functions by running on a loop that allows the user to 
+keep selecting between functions, until they chose to exit the program 
+all together.  This process is then assisted by the functions, in which 
+each operation is organized.  The data is strored in a .h file that is 
+called at the beginging with the libraries.  The output of the program 
+was checked, using the actual values of win - loss record over time.  
+
+Note: ran out of time to get the last two fucntions to work properly, 
+though the search worst records would function similiarly, in concept to 
+the search worst records. The first three functions though should 
+operate correctly with regards to ndfootball.cpp
